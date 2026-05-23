@@ -34,6 +34,6 @@ class ExcelRustImpl implements ExcelRust {
   /// Stream output=Row
   @override
   Stream<List<String>> readFile({required String path, String? sheet}) {
-    return api.readFile(path: path);
+    return api.readFile(path: path, sheet: sheet);
   }
 }
